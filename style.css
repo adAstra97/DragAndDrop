@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #c9c9c9;
+   display: flex;
+   justify-content: center;
+   padding-top: 5rem;
+   overflow: hidden;
+}
+
+.wrap {
+   max-width: 600px;
+   width: 90%;
+   background-color: #eee;
+   padding: 2rem;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+}
+
+.col-header {
+   user-select: none;
+   width: 150px;
+   color: #fff;
+   font-weight: bold;
+   letter-spacing: 0.7px;
+   box-shadow: 2px 3px 9px 1px rgb(204 204 204 / 55%);
+   padding: 0.8rem 1rem;
+   border-radius: 15px;
+   text-align: center;
+}
+
+.item {
+   width: 150px;
+   height: 90px;
+   border: 1px solid #eee;
+   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+   border-radius: 5px;
+   background: #ffffff;
+   padding: 1rem 1rem;
+   color: #828282;
+   text-align: center;
+   cursor: grab;
+   overflow-y: auto;
+}
+
+.item:active {
+   cursor: grabbing;
+}
+
+.placeholder {
+   width: 150px;
+   height: 90px;
+}
+
+.start {
+   background: linear-gradient(180deg, #fc5ad8 0%, #060f7e 179.25%)
+}
+
+.progress {
+   background: linear-gradient(180deg, #fcff20 0%, #b5c823 100%);
+}
+
+.done {
+   background: linear-gradient(180deg, #55ff3a 0%, #1d7b27 90%);
+}
+
+.hold {
+   border-left: 15px solid rgb(186, 186, 186);
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+}
+
+.hide {
+   display: none;
+}
+
+.hovered {
+   border: 4px dashed #cfcfcf;
+   background-color: #f8f8f8;
+}
